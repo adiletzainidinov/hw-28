@@ -6,6 +6,7 @@ import { Todo as TypeTodo } from '../../store/slices/todoSlice';
 
 const TodoList: FC = () => {
   const { todos } = useSelector((state: RootState) => state.todo);
+  console.log(todos);
   return (
     <div>
       {todos.map((item: TypeTodo) => (
