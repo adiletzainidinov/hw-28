@@ -7,7 +7,6 @@ import {
   editTodo,
   isCompleted,
 } from '../../store/slices/todoSlice/TodoSlice';
-import { margin } from '@mui/system';
 
 const Todo: FC<TypeTodo> = ({ title, id, date, whoWillDo }) => {
   const dispatch = useDispatch();
